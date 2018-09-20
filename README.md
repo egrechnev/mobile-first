@@ -5,7 +5,4 @@
 	<li>Run: <strong>gulp</strong>.</li>
 </ol>
 
-# Demo
-<ol>
-	<li><a href="https://github.com/egrechnev/test-for-ecwid/archive/master.zip">view test-for-ecwid</a></li>
-</ol>
+### [Demo](https://egrechnev.github.io/portfolio/test-for-ecwid/)
