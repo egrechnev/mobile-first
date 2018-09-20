@@ -1,0 +1,279 @@
+@import "vars";
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+	.header{
+		&__wrap{
+			height: 450px;
+		}
+		&__inner{
+			margin: 0 40px -60px 40px;
+		}
+		&__slogan{
+			font-size: 48px;
+		}
+	}
+
+	.logo{
+		margin: 80px 0 60px 0;
+		&__img{
+			width: 267px;
+		}
+	}
+
+	.about{
+		padding: 130px 70px 100px 70px;
+	}
+
+	.services{
+		padding: 60px 30px 60px 30px;
+	}
+
+	.footer{
+		&__wrap{
+			padding: 30px 30px;
+			font-size: 25px;
+		}
+	}
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+	.header{
+		&__wrap{
+			height: 450px;
+		}
+		&__inner{
+			margin: 0 auto -60px auto;
+			max-width: 634px;
+		}
+		&__slogan{
+			font-size: 48px;
+		}
+	}
+
+	.logo{
+		margin: 80px 0 60px 0;
+	}
+
+	.footer{
+		&__wrap{
+			padding: 30px 37px 50px 37px;
+		}
+
+		&__phone{
+			margin-left: 20px;
+		}
+		&__user{
+			margin-top: 40px;
+		}
+		&__address{
+			margin-top: 40px;
+		}
+
+	}
+
+	.qr-code{
+		padding: 0;
+		&__img{
+			max-width: 100px;
+		}
+	}
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+	.header{
+		&__wrap{
+			height: 490px;
+		}
+		&__inner{
+			margin: 0 0 -60px 43px;
+		}
+	}
+
+	.logo{
+		margin: 80px 0 60px 0;
+	}
+
+	.about{
+		padding: 130px 60px 100px 70px;
+		&__title{
+			font-size: 32px;
+		}
+		&__item{
+			font-size: 21px;
+		}
+	}
+
+
+	.services{
+		padding: 80px 35px 70px 35px;
+		&::before{
+			left: -54px;
+			right: auto;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 0; height: 0;
+			border-top: 66px solid transparent;
+			border-right: 55px solid $services;
+			border-bottom: 66px solid transparent;
+			border-left: none;
+		}
+		&__title{
+			font-size: 30px;
+		}
+		&__item{
+			padding-left: 125px;
+			&::before{
+				width: 102px;
+				height: 102px;
+			}
+		}
+		&__icon-hosting{
+			&::before{
+				background-size: 60px;
+			}
+		}
+		&__icon-design{
+			&::before{
+				background-size: 49.5px;
+			}
+		}
+		&__icon-marketing{
+			&::before{
+				background-size: 48.5px;
+			}
+		}
+		&__icon-finance{
+			&::before{
+				background-size: 40px;
+			}
+		}
+	}
+
+	.footer{
+		&__wrap{
+			padding: 30px 47px 60px 47px;
+		}
+		&__user{
+			margin-top: 0;
+		}
+		&__address{
+			margin-top: 0;
+		}
+	}
+	.qr-code{
+		&__img{
+			max-width: 140px;
+		}
+	}
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+	.header{
+		&__wrap{
+			height: 630px;
+		}
+		&__inner{
+			max-width: 558px;
+		}
+		&__slogan{
+			font-size: 66px;
+		}
+	}
+
+	.logo{
+		margin: 100px 0 80px 0;
+	}
+
+	.about{
+		&__title{
+			font-size: 35px;
+		}
+		&__text{
+			margin-bottom: 65px;
+		}
+		&__item{
+			font-size: 23px;
+		}
+	}
+
+	.services{
+		padding: 80px 60px 70px 37px;
+		&__title{
+			font-size: 33px;
+		}
+		&__item{
+			padding-left: 137px;
+			&::before{
+				width: 112px;
+				height: 112px;
+			}
+		}
+		&__icon-hosting{
+			&::before{
+				background-size: 70px;
+			}
+		}
+		&__icon-design{
+			&::before{
+				background-size: 59.5px;
+			}
+		}
+		&__icon-marketing{
+			&::before{
+				background-size: 58.5px;
+			}
+		}
+		&__icon-finance{
+			&::before{
+				background-size: 50px;
+			}
+		}
+	}
+
+	.footer{
+		&__wrap{
+			padding: 27px 47px;
+		}
+		&__phone{
+			margin-left: 0;
+		}
+	}
+
+}
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
