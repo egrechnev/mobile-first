@@ -5,5 +5,5 @@
 	<li>Run: <strong>gulp</strong>.</li>
 </ol>
 
-### [Demo](https://egrechnev.github.io/portfolio/test-gre/)
+### [Demo](https://egrechnev.github.io/test-gre/)
 #### [PSD](https://www.freepik.com/free-psd/blue-and-black-business-brochure_1216079.htm)
